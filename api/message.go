@@ -6,6 +6,5 @@ import (
 )
 
 func Message(w http.ResponseWriter, r *http.Request) {
-	jsonStr := []byte(`{"title":"Buy cheese and bread for breakfast."}`)
-	fmt.Print(w, jsonStr)
+	fmt.Fprintf(w, "{\"message\": \"Hello from Go!\"}")
 }
